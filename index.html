@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-home">
+        <nav>
+
+            <div class="nav-menu">
+
+            </div>
+            <div class="nav-button-group">
+                <img class="logo01" src="images/runeimgwit-removebg-preview.png">
+                <a class="nav-button" href="index.html" style="vertical-align:middle"><span>Home </span> </a>
+                <a class="nav-button" href="about.html" style="vertical-align:middle"><span>About </span> </a>
+                <a class="nav-button" href="mywork.html" style="vertical-align:middle"><span>My Work </span> </a>
+                <a class="nav-button" href="contact.html" style="vertical-align:middle"><span>Contact </span> </a>
+            </div>
+        </nav>
+        <div class="main-background">
+            <div class="col-background1">
+                <div class="col-background1-content">
+                    <h1 class="col-background1-tekst">Check Out My Portfolio!</h1>
+
+                    <div class="row">
+                        <div class="column hover-bg">
+                            <h3 class="web-img-tekst">Web</h3>
+                            <img class="web-img"
+                                src="images/web-development-coding-programming-internet-260nw-1141706672.png"
+                                alt="web-development" style="width:100%">
+                        </div>
+                        <div class="column hover-bg">
+                            <h3 class="javascript-img-tekst">Javascript</h3>
+                            <img class="web-img" src="images/javascriptimg.jpg" alt="javascript" style="width:100%">
+                        </div>
+                        <div class="column hover-bg">
+                            <h3 class="java-img-tekst">Java</h3>
+                            <img class="web-img" src="images/java-development-image.jpg" alt="java-development"
+                                style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-background2">
+
+                <div class="col-background2-content">
+                    <h1 class="col-background2-tekst">About Myself</h1>
+
+                    <h1 class="col-background2-tekst">Learn More About Me!</h1>
+
+                    <a class="nav-button" href="about.html" style="vertical-align:middle"><span>Get to know me! </span>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="col-background3 reverse">
+                <div class="col-background3-content1">
+                    <h1 class="col-background3-tekst">Check Out Some Of My Work!</h1>
+                    <a class="my-work-button" href="mywork.html" style="vertical-align:middle"><span>Check It Out!
+                        </span> </a>
+                </div>
+                <div class="col-background3-content2">
+                    <img class="my-work-img" src="images/undraw_Join_re_w1lh-removebg-preview.png">
+                </div>
+            </div>
+
+            <div class="col-background4">
+                <div class="col-background4-content1">
+                    <h1 class="col-background4-tekst">Interested? Contact Me!</h1>
+                    <a class="contact-button" href="contact.html" style="vertical-align:middle"><span>Contact Me!
+                        </span> </a>
+                </div>
+                <div class="col-background4-content2">
+                    <img class="contact-img" src="images/new-contact-img.png">
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("nav-button-group");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
